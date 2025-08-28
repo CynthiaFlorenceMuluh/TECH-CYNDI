@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <meta name="viewport3" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: Arial,sans-serif;
+                 margin:0;
+                background-color:rgba(10,10,40,1);
+                height:100%;
+                color:beige;
+            }
+        .header{
+  display: flex;
+  height:70px;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  margin-bottom:20px ;
+  top:0;
+  z-index: 1000;
+  border:1px solid black;
+     }  
+ .header .sidebar{
+     width:250px;
+     height:90vh;
+     position: fixed;
+     top:0;
+     right:-250px;
+     background:rgba(10,10,40,1);
+     padding-top: 20px;
+     transition: 0.3s;
+     margin: 0;
+ }
+ .header .sidebar a{
+    display: block;
+    color:white;
+    padding:10px;
+    text-decoration: none;
+    transition:0.3s;
+ }
+ .header .close-btn{
+     position:absolute;
+     top:10px;
+     left:15px;
+     font-size: 20px;
+     background-color: none;
+     border:none;
+     color:white;
+     cursor:pointer;
+ }
+ .header .content{
+     padding:20px;
+ }
+ .header .open-btn{
+     font-size: 20px;
+     cursor:pointer;
+     padding:10px 15px;
+     background:#333;
+     color:white;
+     border:none;
+     margin:0px;
+ }
+ img{
+  height:80px;
+  width:50px;
+  border-radius:2px;
+}
+ .sidebar a:hover{
+     background: #575757;
+ }
+ h2{
+    margin-top: 100px;
+    color:beige
+ }
+          
+    .me{
+        text-align: center;
+        height: auto;
+        border-bottom: 1px solid lightblue;
+
+    }
+     .container{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+
+    }
+    .container img{
+        height: 400px;
+        width:300px;
+         border-radius: 15px;
+    }
+    .T{
+        text-align: center;
+        height: auto;
+        border:1px solid lightblue;
+
+    }
+    .skill{
+        align-items: center;
+    }
+    .skill button{
+          justify-items: space-between;
+         height: 30px;
+         margin:3px;
+          background-color:rgba(10,10,40,1);
+          border-radius: 2px;
+          color: beige;
+        }
+    .lower-footer{
+
+      background-color: rgba(10,10,40,0.9);
+      height:50px;
+      width:100%;
+      text-align: center;
+      position: relative;
+      bottom:0px;
+      margin-top: 20px;
+      left:0px;
+     padding-top:20px;
+     border-top: 1px solid lightblue;
+    }
+            
+        </style>
+    </head>
+    <body>
+                   <div class="header">
+           <a href=""><img src="logo.png" alt=""> </a>
+            <div class="sidebar" id="sidebar">
+                    <button class="close-btn" onclick="togglesidebar()">x</button>
+               <ul class="navbar">
+                   <li><a href="My blog.html">HOME</a></li>
+                   <li><a href="Blog.html">BLOG</a></li>
+                   <li><a href="#">TUTORIALS</a></li>
+                   <li><a href="Project.html">PROJECTS</a></li>
+                   <li><a href="Service.html">SERVICES</a></li>
+                   <li><a href="AboutMe.html">ABOUT</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+                <div class="content">
+                   <button class="open-btn" onclick="togglesidebar()">☰
+                  </button> 
+                </div>    
+   </div>
+        <h2> _____ About Me</h2>
+        <div class="container">
+        <img src="cynthous.jpg" alt="cynthous">
+        </div>
+        <div class="me">
+        <p>I'm <strong>Cynthia Florence Muluh</strong>,a passionate computer science student and with deep love for programming, UI/UX designs, web development, AI and 
+        tech innovation. I special in full-stack development, crafting intuitive and functional web applications.
+    I'm currently studing at the University of Buea, where i'm expanding my skills in Web development, data structures, and problem-solving.</p>
+<p>  My projects reflect my the dedication to User-centric design and efficient software solutions.
+    Whether i'm developing responsive website, building scalable backend system, or exploring new technologies, i strive
+    for excellent in every line of code.</p>
+   <p>I firmly believe in discipline, hardwork, purpose and excellent. I am always seeking new opportunities 
+    to challenge myself and grow as a developer.
+    Beyond coding, i'm also interesting in businesses operations and also acquiring new skills 
+    unveiling my potentials in different aspect of life.
+   </p> 
+   <p>
+    Do not hesistate to get <a href="">in touch </a>with me, i am always available 
+    to discuss new projects, creative ideas or opportunity to take part.
+    I will also be glad to be part of your team!!
+   </p>
+</div>
+<div class="skill">
+    <h3> ____ My Tech Stack</h3>
+    <button>JAVASCRIPT</button>
+    <button>HTML</button>
+     <button>CSS</button>
+      <button>MYSQL</button>
+      <button>PHP</button>
+      <button>PYTHON</button>
+      <button>C</button>
+      <button>GIT</button>
+      <button>Git</button>
+      <button>Git</button>
+      <button>Git</button>
+      <button>Git</button>
+      <button>Git</button>
+</div>
+<footer>
+ <div class="lower-footer">
+     <p>copyright &copy;2025| TECHCYNDI By <a href="#"> Miss Cynthia F.M</a></p>
+ </div>
+ </footer>
+ <script>
+      
+function togglesidebar(){
+    let sidebar=
+    document.getElementById('sidebar');
+    if(sidebar.style.right==="-250px"){
+        sidebar.style.right="0";}
+        else{
+            sidebar.style.right="-250px";
+        }
+    }
+    </script> 
+    </body>
+</html>

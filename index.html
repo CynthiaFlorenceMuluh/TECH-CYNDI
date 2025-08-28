@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media(max-width:10000px){
+         body{
+             font-family: Arial,sans-serif;
+               margin:0;
+               background-color:rgba(10,10,40,1);
+               height:100%;
+               color:beige;
+          }
+     .header{
+    display: flex;
+    height:70px;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    margin-bottom:20px ;
+    top:0;
+    z-index: 1000;
+    border:1px solid black;
+       }  
+   .header .sidebar{
+       width:250px;
+       height:90vh;
+       position: fixed;
+       top:0;
+       right:-250px;
+       background:rgba(10,10,40,1);
+       padding-top: 20px;
+       transition: 0.3s;
+       margin: 0;
+   }
+   .header .sidebar a{
+      display: block;
+      color:white;
+      padding:10px;
+      text-decoration: none;
+      transition:0.3s;
+   }
+   .header .close-btn{
+       position:absolute;
+       top:10px;
+       left:15px;
+       font-size: 20px;
+       background-color: none;
+       border:none;
+       color:white;
+       cursor:pointer;
+   }
+   .header .content{
+       padding:20px;
+   }
+   .header .open-btn{
+       font-size: 20px;
+       cursor:pointer;
+       padding:10px 15px;
+       background:#333;
+       color:white;
+       border:none;
+       margin:0px;
+   }
+   img{
+    height:80px;
+    width:50px;
+    border-radius:2px;
+  }
+   .sidebar a:hover{
+       background: #575757;
+
+       }
+       .about{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+       }
+       .main{
+        height:500px;
+         align-items: center;
+        margin-top:100px;
+        color:whitesmoke;
+       }
+       .T{
+        align-items: center;
+        height: auto;
+        border-bottom: 1px solid rgb(118, 119, 121);
+        padding: 1px 2px;
+        margin: 2px;
+       }
+       .T p{
+        font-size:1rem ;
+        text-align: center;
+       }
+       .button{
+        display: flex;
+        height: 40px;
+        align-items: center;
+        border-bottom: 1px solid rgb(118, 119, 121);
+        margin: 1px;
+        padding:5px 10px;
+       }
+       .button .button1{
+        height: 30px;
+        width: auto;
+        text-align: center;
+        background:rgba(10,10,40,1);
+        margin:20px;
+       }
+       .button .button2{
+        background: white;
+        height: 30px;
+        width: auto;
+        text-align: center;
+        margin:10px;
+       }
+
+       .blog{
+        border: 1px solid rgb(12, 48, 126);
+        margin: 3px;
+        border-radius: 2px;
+        text-align: center;
+        text-decoration: none;
+
+       }
+       .project{
+        text-align: center;
+        
+       }
+    .footer{
+      background-color:rgba(10,10,40,0.9);
+      color:white;
+      height:400px;
+      padding:40px 20px 20px;
+      font-family: 'Segoe UI', sans-serif;
+ }
+   .upper-footer{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2px;
+    height:370px;
+    justify-content: space-between;
+    gap:30px;
+    margin: auto;
+    border:1px solid black;
+         }
+   .links ul{
+    list-style:none;
+    padding:0;
+   }
+   .links ul li{
+    margin-bottom: 10px;
+   }
+  .lower-footer{
+        background-color: rgba(10,10,40,0.9);
+        color:white;
+        height:50px;
+        width:100%;
+        text-align: center;
+        position: relative;
+        bottom:0px;
+        margin-top: 20px;
+        left:0px;
+       padding-top:20px;
+        }
+        .social{
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    }
+        </style>
+    </head>
+    <body>
+                    <div class="header">
+            <a href=""><img src="logo.png" alt="logo"> </a>
+             <div class="sidebar" id="sidebar">
+                     <button class="close-btn" onclick="togglesidebar()">x</button>
+                <ul class="navbar">
+                    <li><a href="My blog.html">HOME</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="#">TUTORIALS</a></li>
+                    <li><a href="Project.html">PROJECTS</a></li>
+                    <li><a href="Service.html">SERVICES</a></li>
+                    <li><a href="AboutMe.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+             </div>
+                 <div class="content">
+                    <button class="open-btn" onclick="togglesidebar()">☰
+                   </button> 
+                 </div>    
+    </div>
+<div class="main">
+    <div class="about">
+   <h2>TECHCYNDI</h2>
+   <p>Building with code,passion,vision & purpose</p>
+    </div>
+        <div class="T">
+            <p>Experience Tech innovation in this 21st century,
+             Building Solutions that simplify life and empower people <pb>
+       
+   <p>Bringing dreams, passion and vision to the World
+    where Technology is improving in solving day-to-day life 
+  situation </p><br>
+       </div>
+       <div class="button">
+          <button type="upload" class="button1"><a href="#">RESUME</a></button>
+          <button type="submit" class="button2"><a href="https://wa.me/650148156">WORK WITH ME</a></button>
+    </div>
+   <div class="blog">
+    <h3>Some articles I have written</h3>
+    <ul>
+  <li>  <a href="https://medium.com/@civy2522/what-is-a-programming-paradigm-84aec75efde2">What is a programming paradigm???</a></li>
+   <li> <a href="https://medium.com/@civy2522/understanding-normalization-and-whyit-matters-and-how-to-do-it-c3cd7b72e141">Understanding database normalization and why it 
+        matters and how to do it
+    </a></li>
+   <li> <a href="https://medium.com/@civy2522/dive-into-c-programming-99453e7b1f63">Dive int C programming</a></li>
+    <li><a href="https://medium.com/@civy2522/building-block-of-ai-agent-4a774a381ed9">Building block of AI agents</a></li> 
+    </ul> 
+    <button type="submit"><a href="Https://medium.com/@civy2522/">Blog</a></button> 
+   </div>
+</div>
+<div class="project">
+    <h2>Some projects i have been Working on:</h2>
+    <a href="https://cynthiaflorencemuluh-github-io.vercel.app">Theresita's Restuarant</a>
+    <a href="https://my-portfolio">My portfolio</a>
+    <a href="#">Stressfree</a>
+    <a href="#">TechCyndi</a>
+</div>
+    <footer class="footer">
+
+        <div class="upper-footer">
+            <div class="links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="My blog.html">Home</a></li>
+                    <li><a href="AboutMe.html">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </div>
+        <div class="contact">
+           <h4>Contact</h4>
+           <p>Email:
+            cynthiaflorencemuluh@gmail.com
+           </p>
+           <p>Tel:
+           +237650148156
+           </p>
+           <p>Location:
+           molyko, Buea, Cameroon
+           </p>
+        </div>
+             <div class="socials">
+                <h4>Connect with Cynthia on:</h4><br>
+                
+                <a href="https://wa.me/650148156" target="_blank">What'sapp</a> 
+                <a href="https://www.LinkedIn.com/in/cynthia-florence-muluh-b25395362" target="_blank">linkedin</a> 
+                <a href="https://Github.com/CynthiaFlorenceMuluh" target="_blank">Github</a>
+                <a href="https://x.com/CynthiaMul30307?s=09" target="_blank">twitter</a>
+                <a href="https://youtube.com/@ivycynthia-t6c?si=vClc9I32cRm0ThUY" target="_blank">youtube</a>
+                
+            </div>
+      </div>
+        <div class="lower-footer">
+            <p>copyright &copy;2025|TECHCYNDI By<a href="#"> Miss Cynthia F.M</a></p>
+
+        </div>
+    </footer>
+ <script>
+      
+function togglesidebar(){
+    let sidebar=
+    document.getElementById('sidebar');
+    if(sidebar.style.right==="-250px"){
+        sidebar.style.right="0";}
+        else{
+            sidebar.style.right="-250px";
+        }
+    }
+    </script>
+</html>
