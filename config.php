@@ -1,2 +1,3 @@
 <?php 
-$conn=new mysqli("localhost","root","blog_db");
+$conn=new mysqli("localhost","root","page_db");
+$
